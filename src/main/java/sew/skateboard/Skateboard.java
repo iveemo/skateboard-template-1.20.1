@@ -4,6 +4,8 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import sew.skateboard.item.ModItemGroups;
+import sew.skateboard.item.ModItems;
 
 public class Skateboard implements ModInitializer {
 	public static final String MOD_ID = "skateboard";
@@ -20,5 +22,7 @@ public class Skateboard implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
