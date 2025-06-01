@@ -11,14 +11,14 @@ import net.minecraft.util.Identifier;
 import sew.skateboard.Skateboard;
 
 public class ModItems {
-    public static final Item ks = registerItem("ks", new Item(new FabricItemSettings()));
-    public static final Item hks = registerItem("hks", new Item(new FabricItemSettings()));
+    public static final Item p = registerItem("ks", new Item(new FabricItemSettings()));
+    public static final Item hp = registerItem("hks", new Item(new FabricItemSettings()));
     public static final Item cw = registerItem("cw", new Item(new FabricItemSettings()));
     public static final Item sb = registerItem("sb", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
-        entries.add(ks);
-        entries.add(hks);
+        entries.add(p);
+        entries.add(hp);
         entries.add(cw);
     }
 
