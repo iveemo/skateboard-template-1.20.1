@@ -11,8 +11,8 @@ import net.minecraft.util.Identifier;
 import sew.skateboard.Skateboard;
 
 public class ModItems {
-    public static final Item p = registerItem("ks", new Item(new FabricItemSettings()));
-    public static final Item hp = registerItem("hks", new Item(new FabricItemSettings()));
+    public static final Item p = registerItem("p", new Item(new FabricItemSettings()));
+    public static final Item hp = registerItem("hp", new Item(new FabricItemSettings()));
     public static final Item cw = registerItem("cw", new Item(new FabricItemSettings()));
     public static final Item sb = registerItem("sb", new Item(new FabricItemSettings()));
 
