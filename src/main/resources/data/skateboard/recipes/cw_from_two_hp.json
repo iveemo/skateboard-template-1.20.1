@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "h": {
+      "item": "skateboard:hp"
+    }
+  },
+  "pattern": [
+    "h h"
+  ],
+  "result": {
+    "item": "skateboard:cw"
+  }
+}
