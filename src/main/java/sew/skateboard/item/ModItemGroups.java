@@ -17,9 +17,10 @@ public class ModItemGroups {
             new Identifier(Skateboard.MOD_ID, "skateboard"),
             FabricItemGroup.builder().displayName(Text.translatable("skateboard"))
                     .icon(() -> new ItemStack(ModItems.sb)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.ks);
+                        entries.add(ModItems.hks);
+                        entries.add(ModItems.cw);
                         entries.add(ModItems.sb);
-
-                        entries.add(Items.IRON_BARS);
                     }).build());
 
     public static void registerItemGroups(){
