@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "skateboard:item/sb"
+    "layer0": "skateboard:item/skateboard_item_texture"
   }
 }
