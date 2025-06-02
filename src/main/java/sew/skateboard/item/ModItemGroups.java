@@ -15,11 +15,12 @@ public class ModItemGroups {
 
     public static final ItemGroup SB_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Skateboard.MOD_ID, "skateboard"),
-            FabricItemGroup.builder().displayName(Text.translatable("skateboard"))
+            FabricItemGroup.builder().displayName(Text.translatable("Skateboard"))
                     .icon(() -> new ItemStack(ModItems.sb)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.p);
+                        entries.add(ModItems.hp);
+                        entries.add(ModItems.cw);
                         entries.add(ModItems.sb);
-
-                        entries.add(Items.IRON_BARS);
                     }).build());
 
     public static void registerItemGroups(){

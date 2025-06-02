@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "skateboard:cw"
+    },
+    "p": {
+      "item": "minecraft:oak_slab"
+    }
+  },
+  "pattern": [
+    "ppp",
+    "c c"
+  ],
+  "result": {
+    "item": "skateboard:sb"
+  }
+}

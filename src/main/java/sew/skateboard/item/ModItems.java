@@ -11,9 +11,18 @@ import net.minecraft.util.Identifier;
 import sew.skateboard.Skateboard;
 
 public class ModItems {
+    public static final Item p = registerItem("p", new Item(new FabricItemSettings()));
+    public static final Item hp = registerItem("hp", new Item(new FabricItemSettings()));
+    public static final Item cw = registerItem("cw", new Item(new FabricItemSettings()));
     public static final Item sb = registerItem("sb", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
+        entries.add(p);
+        entries.add(hp);
+        entries.add(cw);
+    }
+
+    private static void addItemsToToolsTabItemGroup(FabricItemGroupEntries entries){
         entries.add(sb);
     }
 
@@ -22,8 +31,9 @@ public class ModItems {
     }
 
     public static void registerModItems(){
-        Skateboard.LOGGER.info("Registering Mod Itens for" + Skateboard.MOD_ID);
+        Skateboard.LOGGER.info("Registering Mod Items for" + Skateboard.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsTabItemGroup);
     }
 }
