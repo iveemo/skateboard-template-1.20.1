@@ -21,7 +21,7 @@ Enhance your Minecraft experience with the Skateboard Mod! This mod introduces a
     - Have Fabric installed.
 
 2. **Steps:**
-    - Download the latest version of the Skateboard Mod from the [releases page](link-to-releases).
+    - Download the latest version of the Skateboard Mod from the [releases page](https://github.com/iveemo/skateboard-template-1.20.1/releases/tag/publish).
     - Place the downloaded mod file into your Minecraft mods folder.
     - Launch Minecraft using the Fabric loader and enjoy the new skateboard features!
 
