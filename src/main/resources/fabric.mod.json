@@ -3,9 +3,9 @@
 	"id": "skateboard",
 	"version": "${version}",
 	"name": "skateboard",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is a skateboard minecraft mod using fabric.",
 	"authors": [
-		"Me!"
+		"iveemo & Ereboss8"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
