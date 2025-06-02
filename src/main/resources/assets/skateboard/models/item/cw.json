@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "skateboard:item/cw"
+    "layer0": "skateboard:item/core_wheels_texture"
   }
 }
