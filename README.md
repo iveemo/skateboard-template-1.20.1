@@ -29,19 +29,23 @@ Enhance your Minecraft experience with the Skateboard Mod! This mod introduces a
 
 - **Plastic:**
     - Smelt slime balls in a furnace to obtain plastic.
-      ![Smelting slime balls](/images/smelting_slime_balls.png)
+
+    ![Smelting slime balls](/images/smelting_slime_balls.png)
 
 - **Hard Plastic:**
     - Smelt plastic in a furnace to get hard plastic.
-      ![Smelting plastic](/images/smelting_plastic.png)
+
+    ![Smelting plastic](/images/smelting_plastic.png)
 
 - **Core-Wheels:**
     - Combine two hard plastics in a crafting table to get one core-wheel.
-      ![Crafting core-wheels](/images/crafting_core_wheels.png)
+
+    ![Crafting core-wheels](/images/crafting_core_wheels.png)
 
 - **Skateboard:**
     - Arrange 3 oak slabs on the top row and 2 core-wheels on the bottom row of a crafting table to get your skateboard!
-      ![Crafting skateboard](/images/crafting_skateboard.png)
+
+    ![Crafting skateboard](/images/crafting_skateboard.png)
 
 ## Usage
 
