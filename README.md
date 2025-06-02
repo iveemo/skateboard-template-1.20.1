@@ -5,10 +5,10 @@ Enhance your Minecraft experience with the Skateboard Mod! This mod introduces a
 ## Features
 
 - **New Items:**
-    - **Plastic:** Obtained by smelting slime balls.
-    - **Hard Plastic:** Crafted by smelting plastic.
-    - **Core-Wheels:** Created by combining two hard plastics.
-    - **Skateboard:** Crafted using 3 oak slabs on top and 2 core-wheels on the bottom.
+    - **Plastic (![Plastic](/images/plastic_texture.png)):** Obtained by smelting slime balls.
+    - **Hard Plastic (![Hard plastic](/images/hard_plastic_texture.png)):** Crafted by smelting plastic.
+    - **Core-Wheels (![Core-wheels](/images/core_wheels_texture.png)):** Created by combining two hard plastics.
+    - **Skateboard (![Skateboard](/images/skateboard_item_texture.png)):** Crafted using 3 oak slabs on top and 2 core-wheels on the bottom.
 
 - **Functionality:**
     - Craft and use a skateboard to move around your world in style.
@@ -29,15 +29,19 @@ Enhance your Minecraft experience with the Skateboard Mod! This mod introduces a
 
 - **Plastic:**
     - Smelt slime balls in a furnace to obtain plastic.
+      ![Smelting slime balls](/images/smelting_slime_balls.png)
 
 - **Hard Plastic:**
     - Smelt plastic in a furnace to get hard plastic.
+      ![Smelting plastic](/images/smelting_plastic.png)
 
 - **Core-Wheels:**
-    - Combine two hard plastics in a crafting table.
+    - Combine two hard plastics in a crafting table to get one core-wheel.
+      ![Crafting core-wheels](/images/crafting_core_wheels.png)
 
 - **Skateboard:**
-    - Arrange 3 oak slabs on the top row and 2 core-wheels on the bottom row of a crafting table.
+    - Arrange 3 oak slabs on the top row and 2 core-wheels on the bottom row of a crafting table to get your skateboard!
+      ![Crafting skateboard](/images/crafting_skateboard.png)
 
 ## Usage
 
@@ -47,12 +51,8 @@ Enhance your Minecraft experience with the Skateboard Mod! This mod introduces a
 ## Future Updates
 
 - Implement skateboard spawning and riding mechanics similar to boats.
-- Add more customization options for skateboards.
-
-## Issues and Contributions
-
-If you encounter any issues or have suggestions for improvements, please open an issue on the [GitHub repository](link-to-repository). Contributions are welcome!
+- Add more customization options for skateboards, such as birch variant, dark oak variant, etc.
 
 ## License
 
-This mod is licensed under [Your Chosen License]. See the LICENSE file for more details.
+This mod is licensed under MIT. See the LICENSE file for more details.
