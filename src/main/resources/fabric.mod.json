@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "skateboard",
-	"version": "${version}",
+	"version": "1.0.0",
 	"name": "skateboard",
 	"description": "This is a skateboard minecraft mod using fabric.",
 	"authors": [
