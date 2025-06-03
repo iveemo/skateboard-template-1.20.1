@@ -8,7 +8,7 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import sew.skateboard.Skateboard;
+import sew.skateboard.SkateboardMod;
 
 public class ModItems {
     public static final Item p = registerItem("p", new Item(new FabricItemSettings()));
@@ -27,11 +27,11 @@ public class ModItems {
     }
 
     private static Item registerItem(String name, Item item){
-        return Registry.register(Registries.ITEM, new Identifier(Skateboard.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, new Identifier(SkateboardMod.MOD_ID, name), item);
     }
 
     public static void registerModItems(){
-        Skateboard.LOGGER.info("Registering Mod Items for" + Skateboard.MOD_ID);
+        SkateboardMod.LOGGER.info("Registering Mod Items for" + SkateboardMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsTabItemGroup);
