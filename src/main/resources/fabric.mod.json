@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
 	"id": "skateboard",
-	"version": "1.0.0",
-	"name": "skateboard",
-	"description": "This is a skateboard minecraft mod using fabric.",
+	"version": "${version}",
+	"name": "Skateboard Mod",
+	"description": "This is a Skateboard Minecraft Mod.",
 	"authors": [
 		"iveemo & Ereboss8"
 	],
@@ -16,21 +16,17 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"sew.skateboard.Skateboard"
+			"sew.skateboard.SkateboardMod"
 		],
 		"client": [
-			"sew.skateboard.SkateboardClient"
+			"sew.skateboard.SkateboardModClient"
 		],
 		"fabric-datagen": [
-			"sew.skateboard.SkateboardDataGenerator"
+			"sew.skateboard.SkateboardModDataGenerator"
 		]
 	},
 	"mixins": [
-		"skateboard.mixins.json",
-		{
-			"config": "skateboard.client.mixins.json",
-			"environment": "client"
-		}
+		"skateboard.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.13",
