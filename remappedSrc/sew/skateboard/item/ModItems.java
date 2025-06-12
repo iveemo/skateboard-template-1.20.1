@@ -5,20 +5,16 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import sew.skateboard.SkateboardMod;
-import sew.skateboard.entity.ModEntities;
 
 public class ModItems {
     public static final Item p = registerItem("p", new Item(new FabricItemSettings()));
     public static final Item hp = registerItem("hp", new Item(new FabricItemSettings()));
     public static final Item cw = registerItem("cw", new Item(new FabricItemSettings()));
-    public static final Item sb = registerItem("sb",
-            new SpawnEggItem(ModEntities.SKATEBOARD, 0xa86518, 0x3b260f, new FabricItemSettings()));
-
+    public static final Item sb = registerItem("sb", new SkateboardItem(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(p);

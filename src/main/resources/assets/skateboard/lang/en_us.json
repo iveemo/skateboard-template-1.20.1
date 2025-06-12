@@ -1,8 +1,8 @@
 {
+  "itemgroup.sb": "Skateboard Group",
   "item.skateboard.sb": "Skateboard",
   "item.skateboard.p": "Plastic",
   "item.skateboard.hp": "Hard plastic",
-  "item.skateboard.cw": "Core-wheels",
+  "item.skateboard.cw": "Core-wheels"
 
-  "itemgroup.sb": "Skateboard Group"
 }
