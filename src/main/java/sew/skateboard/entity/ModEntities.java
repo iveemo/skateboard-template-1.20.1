@@ -14,13 +14,12 @@ public class ModEntities {
     public static final EntityType<SkateboardEntity> SKATEBOARD = Registry.register(
             Registries.ENTITY_TYPE,
             new Identifier(SkateboardMod.MOD_ID, "skateboard"),
-            FabricEntityTypeBuilder.create(SpawnGroup.MISC, SkateboardEntity::new)
-                    .dimensions(EntityDimensions.fixed(1.0f, 0.25f)) //dimensions are hitboxes
+            FabricEntityTypeBuilder.<SkateboardEntity>create(SpawnGroup.MISC, SkateboardEntity::new)
+                    .dimensions(EntityDimensions.fixed(1.0f, 0.25f))
                     .build()
     );
 
     public static void registerModEntities() {
-        SkateboardMod.LOGGER.info("Registering Entities for " + SkateboardMod.MOD_ID);
+        SkateboardMod.LOGGER.info("Registering Mod Entities for " + SkateboardMod.MOD_ID);
     }
-
 }

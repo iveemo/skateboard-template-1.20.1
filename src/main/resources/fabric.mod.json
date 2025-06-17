@@ -12,14 +12,14 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/skateboard/icon.png",
+	"icon": "assets/skateboard/textures/item/skateboard_item_texture.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"sew.skateboard.SkateboardMod"
 		],
 		"client": [
-			"sew.skateboard.SkateboardModClient"
+          "sew.skateboard.ClientInitializer"
 		],
 		"fabric-datagen": [
 			"sew.skateboard.SkateboardModDataGenerator"

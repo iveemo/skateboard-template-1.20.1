@@ -1,25 +1,24 @@
 package sew.skateboard.entity.custom;
+
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.passive.AbstractHorseEntity;
-import net.minecraft.world.EntityView;
+import net.minecraft.entity.passive.HorseEntity;
 import net.minecraft.world.World;
 
-public class SkateboardEntity extends AbstractHorseEntity {
+public class SkateboardEntity extends HorseEntity {
 
-    public SkateboardEntity(EntityType<? extends AbstractHorseEntity> entityType, World world) {
+    public SkateboardEntity(EntityType<? extends HorseEntity> entityType, World world) {
         super(entityType, world);
     }
 
     @Override
     protected void initGoals() {
-
-
+        // Leave empty to prevent default horse behaviors
     }
 
-    public static DefaultAttributeContainer.Builder createSkateboardAttributes(){
+    public static DefaultAttributeContainer.Builder createSkateboardAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 15)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 1f)
@@ -30,69 +29,17 @@ public class SkateboardEntity extends AbstractHorseEntity {
     }
 
     @Override
-    public EntityView method_48926() {
-        return null;
+    public boolean isSaddled() {
+        return true; // Always allow riding without saddle
     }
 
-//    @Nullable
-//    @Override
-//    public PassiveEntity createChild(ServerWorld world, PassiveEntity entity){
-//        return ModEntities.SKATEBOARD.create(world);
-//    }
+    @Override
+    protected boolean receiveFood(net.minecraft.entity.player.PlayerEntity player, net.minecraft.item.ItemStack item) {
+        return false; // Prevent feeding
+    }
 
-//    private static final double SPEED_MULTIPLIER = 0.4;
-//    private static final double JUMP_STRENGTH = 0.5;
-//    private boolean isJumping = false;
-//    public SkateboardEntity(EntityType<?> type, World world) {
-//        super(type, world);
-//    }
-//    @Override
-//    public ActionResult interact(PlayerEntity player, Hand hand) {
-//        if (!this.hasPassengers()) {
-//            player.startRiding(this);
-//            return ActionResult.SUCCESS;
-//        }
-//        return ActionResult.PASS;
-//    }
-//    @Override
-//    public void tick() {
-//        super.tick();
-//
-//        if (this.hasPassengers()) {
-//            Entity rider = this.getFirstPassenger();
-//
-//            if (rider instanceof PlayerEntity player) {
-//                // Get player input
-//                float forward = player.forwardSpeed;
-//                float sideways = player.sidewaysSpeed;
-//
-//                // Calculate movement based on player's looking direction and input
-//                float yaw = player.getYaw();
-//                double x = (double)(MathHelper.sin(-yaw * 0.017453292F) * forward + MathHelper.cos(yaw * 0.017453292F) * sideways) * SPEED_MULTIPLIER;
-//                double z = (double)(MathHelper.cos(-yaw * 0.017453292F) * forward - MathHelper.sin(yaw * 0.017453292F) * sideways) * SPEED_MULTIPLIER;
-//
-//                this.setVelocity(x, this.getVelocity().y, z);
-//
-//                if (isJumping && this.isOnGround()) {
-//                    this.addVelocity(0, JUMP_STRENGTH, 0);
-//                    isJumping = false;
-//                }
-//            }
-//        }
-//
-//        this.move(MovementType.SELF, this.getVelocity());
-//
-//        // Apply friction
-//        this.setVelocity(this.getVelocity().multiply(0.9, 0.98, 0.9));
-//    }
-//    public void setJumping(boolean jumping) {
-//        this.isJumping = jumping;
-//    }
-//    @Override
-//    protected void initDataTracker() {}
-//    @Override
-//    protected void readCustomDataFromNbt(net.minecraft.nbt.NbtCompound nbt) {}
-//    @Override
-//    protected void writeCustomDataToNbt(net.minecraft.nbt.NbtCompound nbt) {}
-
+    @Override
+    public boolean isBreedingItem(net.minecraft.item.ItemStack stack) {
+        return false; // Prevent breeding
+    }
 }

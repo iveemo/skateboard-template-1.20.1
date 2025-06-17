@@ -1,9 +1,8 @@
-package sew.skateboard;
+package sew.skateboard.entity;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import sew.skateboard.entity.ModEntities;
 import sew.skateboard.entity.client.ModModelLayers;
 import sew.skateboard.entity.client.PorcupineModel;
 import sew.skateboard.entity.client.SkateboardRender;

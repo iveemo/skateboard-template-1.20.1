@@ -158,8 +158,11 @@ public class PorcupineModel <T extends SkateboardEntity> extends SinglePartEntit
 		return TexturedModelData.of(modelData, 32, 32);
 	}
 
+
+
 	@Override
 	public void setAngles(SkateboardEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+		this.getPart().traverse().forEach(ModelPart::resetTransform); //resets animation otherwise it would stack on top of each other
 	}
 
 	@Override
